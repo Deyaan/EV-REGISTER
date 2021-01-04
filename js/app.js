@@ -5,7 +5,7 @@ function RegisterUser() {
   var password=document.getElementById('password').value;
   firebase.auth().createUserWithEmailAndPassword(email,password).then(function(){
    alert('User Register successfully');
-   window.location.href='file:///C:/Users/Admin/Desktop/E-V%20Station%20-%20Copy/Main%20page/index.html'
+   window.location.href='https://deyaan.github.io/EV-MAIN/'
    var id=firebase.auth().currentUser.uid;
    
    firebase.database().ref('Users/'+id).set({
